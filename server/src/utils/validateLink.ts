@@ -1,6 +1,6 @@
 import axios from "axios";
 
-export const YT_API_KEY = "AIzaSyC3966AOJ6BS7Nd1dv1-YvQAzJTLInpRs4";
+export const YT_API_KEY = process.env.YOUTUBE_API_KEY;
 
 export async function isValidPlaylist(playlistId: string): Promise<boolean> {
   console.log("playlistId:", playlistId);
