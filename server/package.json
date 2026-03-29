@@ -1,0 +1,51 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "dev": "concurrently \"npm run dev:server\" \"npm run dev:ts\"",
+    "dev:server": "nodemon dist/index.js",
+    "dev:ts": "tsc --watch",
+    "build": "tsc",
+    "start": "node dist/index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "description": "",
+  "devDependencies": {
+    "@types/axios": "^0.9.36",
+    "@types/cors": "^2.8.19",
+    "@types/dotenv": "^6.1.1",
+    "@types/express": "^5.0.5",
+    "@types/http-errors": "^2.0.5",
+    "@types/mongoose": "^5.11.96",
+    "@types/winston": "^2.4.4",
+    "concurrently": "^9.2.1",
+    "nodemon": "^3.1.11",
+    "typescript": "^5.9.3"
+  },
+  "dependencies": {
+    "@clerk/backend": "^2.25.0",
+    "@clerk/express": "^1.7.57",
+    "@google/generative-ai": "^0.24.1",
+    "@langchain/community": "^1.1.4",
+    "@langchain/core": "^1.1.15",
+    "axios": "^1.13.2",
+    "cors": "^2.8.5",
+    "dotenv": "^17.2.3",
+    "express": "^5.2.1",
+    "faiss-node": "^0.5.1",
+    "google-auth-library": "^10.5.0",
+    "http-errors": "^2.0.1",
+    "langchain": "^1.2.10",
+    "mongoose": "^9.0.0",
+    "openai": "^6.15.0",
+    "path": "^0.12.7",
+    "pdf-parse": "^2.4.5",
+    "puppeteer": "^24.34.0",
+    "svix": "^1.82.0",
+    "winston": "^3.19.0"
+  }
+}
