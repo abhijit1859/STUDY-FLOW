@@ -23,7 +23,6 @@ study-pro/
 ### Client
 - **Rich Text Editor**: Advanced note-taking with editor plugins
 - **Whiteboard**: Visual note-taking and canvas drawing
-- **Chat Interface**: Interactive chat functionality
 - **Study Tools**: Pomodoro timer
 - **Resource Management**: PDF viewer, saved links, playlist management
 - **Theme Support**: Dark/light theme switching
