@@ -140,10 +140,4 @@ Create `.env` files in each directory with:
 - `POST /api/sessions` - Create study session
 - `GET /api/sessions` - Fetch sessions
 
-## 🧪 Testing
 
-Run unit tests in the client:
-```bash
-cd client
-npm run test
-```
