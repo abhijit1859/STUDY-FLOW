@@ -202,7 +202,7 @@ export const generatePdf = async (req: Request, res: Response) => {
        try {
         console.log(videoId)
          const response = await axios.get(
-             `https://transcript-backned.onrender.com/${videoId}`,
+             `http://127.0.0.1:8000/transcript/${videoId}`,
              { timeout: 10000 }
          );
          transcriptText = response.data.transcript;

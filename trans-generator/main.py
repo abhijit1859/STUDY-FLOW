@@ -13,7 +13,7 @@ async def transcript_route(video_id: str):
     try:
         # run blocking function in thread
         text = await asyncio.to_thread(extract_transcript, video_id)
-
+        print(text)
         return {
             "video_id": video_id,
             "transcript": text

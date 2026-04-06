@@ -29,10 +29,10 @@ def extract_transcript(video_id: str) -> str:
         return full_text
 
     except TranscriptsDisabled:
-        raise Exception("❌ Transcripts are disabled for this video")
+        raise Exception("Transcripts are disabled for this video")
 
     except NoTranscriptFound:
-        raise Exception("❌ No transcript available in English or Hindi")
+        raise Exception(" No transcript available in English or Hindi")
 
     except CouldNotRetrieveTranscript:
-        raise Exception("❌ Blocked by YouTube / Could not retrieve transcript")
+        raise Exception(" Blocked by YouTube / Could not retrieve transcript")
